@@ -9,7 +9,7 @@
 .btn-primary i {
   background-color: $primary-color !important;
   border-color: $primary-color !important;
-  color: white !important;
+  color: #1c1817 !important;
 }
 
 .btn-primary:active,
@@ -19,13 +19,13 @@
 .btn-primary:hover i {
   background-color: $primary-color-darken !important;
   border-color: $primary-color-darken !important;
-  color: white !important;
+  color: #1c1817 !important;
 }
 
 .btn-primary:focus {
   background-color: $primary-color-darken !important;
   border-color: $primary-color-darken !important;
-  color: white !important;
+  color: #1c1817 !important;
   box-shadow: 0 0 0 2px $primary-color-lighten !important;
 }
 
@@ -53,7 +53,7 @@ a {
 
   &:hover {
     background: $primary-color !important;
-    color: white !important;
+    color: #1c1817 !important;
   }
 
   &:focus {
@@ -76,7 +76,7 @@ a {
   }
 
   & .header-nav.active {
-    color: $primary-color !important;
+    color: $primary-color-darken !important;
   }
 }
 
@@ -98,7 +98,7 @@ a {
   color: #6e7687 !important;
   &:hover {
     color: $primary-color !important;
-    background-color: $primary-color-lighten !important;
+    background-color: $primary-color-darken !important;
     &.sort-disabled {
       background: #e6e6e6 !important;
       color: rgb(110, 118, 135) !important;
@@ -107,7 +107,7 @@ a {
   }
   &:active, &.active {
     color: $primary-color !important;
-    background-color: $primary-color-lighten !important;
+    background-color: $primary-color-darken !important;
   }
 }
 
@@ -136,14 +136,14 @@ input:focus, select:focus {
 
 .bg-primary {
   background-color: $primary-color !important;
-  color: white !important;
+  color: #1c1817 !important;
 }
 
 .btn-danger {
   color: white !important;
 }
 
-#clear-search {
+.clear-search {
   &:hover {
     color: $primary-color-darken !important;
   }
@@ -175,7 +175,7 @@ input:focus, select:focus {
 .primary-regular {
   background-color: $primary-color !important;
   border-color: $primary-color !important;
-  color: white !important;
+  color: #1c1817 !important;
 }
 
 .primary-lighten {
@@ -187,7 +187,7 @@ input:focus, select:focus {
 .primary-darken {
   background-color: $primary-color-darken !important;
   border-color: $primary-color-darken !important;
-  color: white !important;
+  color: #1c1817 !important;
 }
 
 .custom-switch-input:checked ~ .custom-switch-indicator {
@@ -214,4 +214,63 @@ input:focus, select:focus {
   &.current {
     box-shadow: 0 0 10px $primary-color-lighten;
   }
+}
+
+h1#main-text{
+  color:$primary-color !important;
+}
+h1#user-text{
+  color:$primary-color !important;
+}
+
+.text-help{
+  color: #77e0fd !important;
+}
+h5.text-help{
+  color: #77e0fd !important;
+}
+
+h4.text-help{
+  color: #77e0fd !important;
+}
+
+h4.my-2{
+  color:$primary-color !important;
+}
+h4.text-left{
+  color:$primary-color !important;
+}
+h1.display-3{
+  color:$primary-color !important;
+}
+.font-weight-normal{
+  color:$primary-color-lighten !important;
+}
+.background .lead{
+  color:$primary-color !important;
+}
+.card-header.background h4{
+  color:$primary-color !important;
+}
+.form-label{
+  color:$primary-color !important;
+}
+.sign-in-button{
+  color:#1c1817 !important;
+  border: 1px solid #1c1817 !important;
+}
+.sign-in-button:hover{
+  color:#1c1817 !important;
+  border: 1px solid $primary-color !important;
+}
+.watch-video-btn{
+  background-color: $primary-color !important;
+  border: 1px solid $primary-color !important;
+  color:#ffffff !important;
+}
+.header .header-nav{
+  color:#1c1817 !important;
+}
+.header .avatar{
+  color:#1c1817 !important;
 }

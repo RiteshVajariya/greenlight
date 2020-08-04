@@ -38,6 +38,7 @@
 @import "font-awesome";
 @import "monolith.min.scss";
 @import "bootstrap-select.min";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @import "utilities/variables";
 @import "admins";
@@ -52,7 +53,8 @@
 }
 
 html, body {
-  font-family: "Source Sans Pro" !important;
+//  font-family: "Source Sans Pro" !important;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
@@ -134,11 +136,14 @@ a {
 }
 
 .cookies-banner {
-  color: white;
+  color: #1c1817 !important;
   background-color: $button-color-blue;
   #cookies-agree-button {
     margin: 0;
   }
+}
+.cookies-banner .cookies-warning-text{
+  color:#1c1817 !important;
 }
 
 input:focus {
@@ -154,7 +159,8 @@ input:focus {
 }
 
 .header .header-nav {
-  color: $text-muted !important;
+  color: #fed86f;
+//  color: $text-muted !important;
 
   &:hover {
     padding-bottom: 21px;

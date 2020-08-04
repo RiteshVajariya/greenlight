@@ -1,18 +1,18 @@
-# BigBlueButton open source conferencing system - http://www.bigbluebutton.org/.
+# YMeet open source conferencing system - http://www.YMeet.us/.
 #
-# Copyright (c) 2018 BigBlueButton Inc. and by respective authors (see below).
+# Copyright (c) 2018 YMeet Inc. and by respective authors (see below).
 #
 # This program is free software; you can redistribute it and/or modify it under the
 # terms of the GNU Lesser General Public License as published by the Free Software
 # Foundation; either version 3.0 of the License, or (at your option) any later
 # version.
 #
-# BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
+# YMeet is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
 #
 # You should have received a copy of the GNU Lesser General Public License along
-# with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
+# with YMeet; if not, see <http://www.gnu.org/licenses/>.
 
 # Locale.
 
@@ -36,7 +36,7 @@ en:
         enabled: Enabled
         info: Only allow authenticated users to join a room
         title: Require Authentication for Rooms
-        user-info: You must sign in above to join this room.
+        user-info: You must sign in to YMeet to join this room
       branding:
         change: Change Image
         info: Change the branding image that appears in the top left corner
@@ -107,7 +107,7 @@ en:
       shared_access:
         info: Setting to disabled will remove the button from the Room options dropdown, preventing users from sharing rooms
         title: Allow Users to Share Rooms
-      subtitle: Customize Greenlight
+      subtitle: Customize YMeet
       tabs:
         appearance: Appearance
         administration: Administration
@@ -122,7 +122,7 @@ en:
       demoted: User has been successfully demoted
       invite: Invite successfully sent to %{email}
       invite_email_verification: Emails must be enabled in order to use this method. Please contact your system administrator.
-      merge_fail: There was an issue merging the user accounts. Please check the users selected and try again
+      merge_fail: There was an issue merging the user accounts. Please check the users selected and try again 
       merge_success: User accounts merged successfully
       perm_deleted: User has been permanently deleted
       promoted: User has been successfully promoted
@@ -159,13 +159,13 @@ en:
     room_configuration:
       title: Room Configuration
       mute:
-        info: Automatically mutes the user when they join the BigBlueButton meeting
+        info: Automatically mutes the user when they join the YMeet meeting
       require_moderator:
-        info: Prompts the moderator of the BigBlueButton meeting when a user tries to join. If the user is approved, they will be able to join the meeting.
+        info: Prompts the moderator of the YMeet meeting when a user tries to join. If the user is approved, they will be able to join the meeting.
       allow_any:
         info: Allows any user to start the meeting at any time. By default, only the room owner can start the meeting.
       all_moderator:
-        info: Gives all users moderator privileges in BigBlueButton when they join the meeting.
+        info: Gives all users moderator privileges in YMeet when they join the meeting.
       recordings:
         info: Allows room owners to specify whether they want the option to record a room or not. If enabled, the moderator must still click the "Record" button once the meeting has started.
       options:
@@ -210,7 +210,7 @@ en:
         username: Username
       title: Manage Users
   add_to_google_calendar: "Add to Google Calendar"
-  bigbluebutton: BigBlueButton
+  bigbluebutton: YMeet
   bigbluebutton_exception: Oops, there was an error when starting the meeting!
   cancel: Cancel
   cookies:
@@ -230,7 +230,7 @@ en:
   errors:
     bigbluebutton:
       help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
-      message: Invalid BigBlueButton Endpoint and Secret
+      message: Invalid YMeet Endpoint and Secret
       title: Server Error
     internal:
       message: Looks like something went wrong on our end.
@@ -243,10 +243,10 @@ en:
       contact_admin: If you are not an administrator, please contact one.
       continue: I'd like to stay using 1.0.
       notice: >
-        Greenlight encountered a database migration error.<br>
-        This may be because you haven't updated to Greenlight 2.0.
+        YMeet encountered a database migration error.<br>
+        This may be because you haven't updated to YMeet 2.0.
       upgrade: Show me how to upgrade to 2.0!
-      version: We've released a new version of Greenlight, but your database isn't compatible.
+      version: We've released a new version of YMeet, but your database isn't compatible.
     messages:
       blank: can't be blank
       too_short: is too short
@@ -257,7 +257,7 @@ en:
       inclusion: is not included in the list
     no_provider:
       message: The site you are trying to access is not enabled
-      help: Please contact your system administrator to setup Greenlight
+      help: Please contact your system administrator to setup YMeet
     not_found:
       message: Sorry! The page you are looking for does not exist.
       help: Is it possible its been removed?
@@ -273,9 +273,9 @@ en:
       help: If you believe this is a mistake, please contact your system administrator.
   expired_reset_token: Password reset link has expired!
   features:
-    title: Features
+    title: Why
     rooms: Personalized Rooms
-    recordings: Recording Management
+    recordings: Record Entire Conference, including Audio, Video and Whitboard
     designs: Custom Designs
     authentication: User Authentication
   footer:
@@ -287,7 +287,7 @@ en:
     email: Email
     submit: Submit
   go_back: Go back
-  greenlight: Greenlight
+  greenlight: YMeet
   header:
     all_recordings: All Recordings
     dropdown:
@@ -296,7 +296,7 @@ en:
       home: Home
       settings: Profile
       signout: Sign out
-  home_room: Home Room
+  home_room: YMeet Room
   info_update_success: Information successfully updated.
   invalid_credentials: The email and password you entered did not match our records. Try again or click Forgot Password to reset your password.
   invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
@@ -306,16 +306,22 @@ en:
       mailer:
         subject: 'has invited you to view a recording.'
         body: 'To view the recording, follow the link below:'
-        autogenerated: 'This e-mail is auto-generated by BigBlueButton.'
-        footer: 'BigBlueButton is an open source web conferencing system. For more information on BigBlueButton, see https://bigbluebutton.org/.'
+        autogenerated: 'This e-mail is auto-generated by YMeet.'
+        footer: 'For more information on YMeet, see https://ymeet.us/.'
     search:
       start: Start searching...
   landing:
-    about: "%{href} is a simple front-end for your BigBlueButton open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to BigBlueButton.
-    video: Watch our tutorial on using Greenlight
-    upgrade: Show me how to upgrade to 2.0!
-    version: We've released a new version of Greenlight, but your database isn't compatible.
+#    about: "%{href} is a YMeet web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
+#    about: "Sign up for an account or login using your Google, Office365 User Account or create your own account with us to access the features of YMeet  !!"
+    about: "YMeet enables collaboration via Audio and Video Conference. Whether you are small, medium, large corporation or school and university, you can start using YMeet for your online meetings via secure connection."
+    about_1: "YMeet enables collaboration via Audio and Video Conference. Whether you are small, medium, large corporation or school and university, you can start using YMeet for your online meetings via secure connection."
+    about_2: " Sign up for an account using your Google, Office365 Account or create your own account with us to start your secure meeting !!"
+    welcome: Welcome to YMeet !
+    video: Watch our tutorial on using YMeet
+    upgrade: Show me how to create a meeting!
+    version: We've released a new version of YMeet, but your services aren't compatible.
+    support:  For more information -
+    faq:  
   language_default: Default (browser language)
   ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
   login: Sign in
@@ -327,10 +333,10 @@ en:
         signin: To access your personal rooms, click the button below and sign in.
         signin_link: Sign In
         signup:
-          info: A new user has signed up to use Greenlight.
-          more-info: To allow this user to access Greenlight you must approve their account in organization settings.
+          info: A new user has signed up to use YMeet.
+          more-info: To allow this user to access YMeet you must approve their account in organization settings.
           admins_link: Visit the Organization Page
-          subject: New Greenlight User Sign Up
+          subject: New YMeet User Sign Up
           username: The user signed up with the name %{name} and the email %{email}.
         subject: Account Approved
         username: Your username is %{email}.
@@ -340,15 +346,15 @@ en:
         root_link: Sign In
         subtitle: "%{role} Rights Rescinded"
       invite:
-        info: You have been invited to your own personal space by %{name}
+        info: You have been invited to your own personal meeting room by %{name}
         signup_info: To signup using your email, click the button below and follow the steps.
         signup_link: Sign Up
         signup:
-          info: A user that was invited has signed up to use Greenlight.
+          info: A user that was invited has signed up to use YMeet.
           admins_link: Visit the Organization Page
-          subject: New Greenlight User Sign Up
+          subject: New YMeet User Sign Up
           username: The user signed up with the name %{name} and the email %{email}.
-        subject: Invitation to join BigBlueButton
+        subject: Invitation to join YMeet!
         username: Your username is %{email}.
       password_reset:
         title: 'Password reset'
@@ -363,7 +369,7 @@ en:
         more-info: To view your new abilities please visit %{url}.
         subtitle: "%{role} Rights Granted"
       verify_email:
-        welcome: Welcome to your personal space, %{name}!
+        welcome: Welcome to your personal meeting room, %{name}!
         success: Leveraging %{bigbluebutton}, you can create your own rooms to host sessions and collaborate with others.
         username: Your username is %{email}.
         verify: To verify your account, just click the button below.
@@ -501,7 +507,7 @@ en:
       fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
       signup: Your account was successfully created. It has been sent to an administrator for approval.
     banned:
-      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator.
+      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
     deprecated:
       new_signin: Select a new login method for you account. All your rooms from your old account will be migrated to the new account
       twitter_signin: Signing in via Twitter has been deprecated and will be removed in the next release. Click <a href="%{link}"> here </a> to move your account to a new authentication method
@@ -537,8 +543,14 @@ en:
       success: Room deleted successfully
       fail: Failed to delete room (%{error})
     enter_the_access_code: Enter the room's access code
+    information_url: You can invite others to join your meeting by sending them the below link (URL). Copy the link using Copy button. 
+    default_room_text: This is the default meeting room. You can create more. See below
+    information_start: As a moderator, you can begin your meeting by Clicking the "Start" button. 
+    information_start2:  Once you press the Start button, system will detect Audio, Video setup on your device and will request the permission to use appropriate device.
+    information_room_config: Access your meeting room settings - such as, setup access code, modify the meeting room name, etc. by clicking elipsis
+    information_room_config2: in the below box
     invalid_provider: You have entered an invalid url. Please check the url and try again.
-    invitation_description: You have been invited to join %{name} using BigBlueButton. To join, click the link above and enter your name.  
+    invitation_description: You have been invited to join %{name} using YMeet. To join, click the link above and enter your name.  
     invited: You have been invited to join
     recording_present: I acknowledge that this session is going to be recorded. This may include my voice and video if enabled.
     invite_participants: Invite Participants
@@ -586,7 +598,7 @@ en:
       provider: Provider
       image: Image
       image_url: Profile Image URL
-      roles: User Role
+      roles: User Roles
       subtitle: Update your Account Info
       title: Account Info
       reset_password: Reset user password

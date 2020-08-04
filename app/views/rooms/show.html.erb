@@ -32,6 +32,7 @@
           <% end %>
         </div>
         <h4 class="text-left mb-6"><%= @room.sessions %> <%= t("room.sessions") %> | <%= @recordings.length %> <%= t("room.recordings") %></h4>
+        <div class="text-help mb-6"><i class="fa fa-sticky-note" aria-hidden="true"></i> &nbsp <%= t("room.information_url") %> </div>
         <% unless exceeds_limit %>
           <label class="form-label"><%= t("room.invite_participants") %></label>
           <div class="row">
@@ -62,20 +63,49 @@
               </div>
             </div>
           </div>
+
+          <div class="row">
+     	   <% if @room.access_code.present? %>
+            <div class="col-lg-7 col-md-12 mt-2">
+              	<div class="input-icon invite-link-input">
+                <span class="input-icon-addon">
+                  <i class="fas fa-key"></i>
+                </span>
+                <input id="access-code" type="text" class="form-control w-100" value="<%= @room.access_code %>" readonly="">
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="row">
+                <div class="col-sm-6">
+                  <a id="copy-accesscode" class="btn btn-primary btn-block mt-2">
+                    <i class="fas fa-copy"></i>
+                    <%= t("copy_access_code") %>
+                  </a>
+                </div>
+              </div>
+            </div>
+  	   <% end %>	
+          </div>
+
+
         <% end %>
       </div>
       <div class="offset-lg-1 col-lg-3 col-sm-12 force-bottom mt-5">
+        <div class="text-help mb-6"><i class="fa fa-sticky-note" aria-hidden="true"></i> &nbsp<%= t("room.information_start") %> &nbsp <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> &nbsp <%= t("room.information_start2") %> </div>
         <% if @room_running %>
-          <%= button_to t("room.join"), room_path(@room), class: "btn btn-primary btn-block px-7 start-button float-right", "data-disable": "" %>
+          <%= button_to t("room.join"), room_path(@room), class: "btn btn-primary btn-block px-7 start-button float-left", "data-disable": "" %>
         <% else %>
           <% unless exceeds_limit %>
-            <%= button_to t("room.start"), start_room_path(@room), class: "btn btn-primary btn-block px-7 start-button float-right", "data-disable": "" %>
+            <%= button_to t("room.start"), start_room_path(@room), class: "btn btn-primary btn-block px-7 start-button float-left", "data-disable": "" %>
           <% end %>
         <% end %>
       </div>
     </div>
-
+        <h4 &#13> </h4>
+        <h4 &#13> </h4>
+        <h4 &#13> </h4>
     <div id="room_block_container" class="row pt-7 pb-5">
+        <div class="text-help mb-6"><i class="fa fa-lightbulb" aria-hidden="true"></i> &nbsp <%= t("room.information_room_config") %> &nbsp <i class="fa fa-ellipsis-v" aria-hidden="true"></i> &nbsp <%= t("room.information_room_config2") %> </div>
       <% if current_user.role.get_permission("can_create_rooms") %>
         <% current_user.ordered_rooms.each do |room| %>
           <div class="col-lg-4 col-md-6 col-sm-12">

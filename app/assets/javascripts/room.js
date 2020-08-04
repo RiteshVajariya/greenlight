@@ -26,6 +26,7 @@ $(document).on('turbolinks:load', function(){
   // Only run on room pages.
   if (controller == "rooms" && action == "show"){
     var copy = $('#copy');
+    var copyac = $('#copy-accesscode');
 
     // Handle copy button.
     copy.on('click', function(){
@@ -40,6 +41,23 @@ $(document).on('turbolinks:load', function(){
         setTimeout(function(){
           copy.removeClass('btn-success');
           copy.html("<i class='fas fa-copy'></i>" + getLocalizedString("copy"))
+        }, 2000)
+      }
+    });
+
+    // Handle copy access code button.
+    copyac.on('click', function(){
+      var accesscode = $('#access-code');
+      accesscode.select();
+
+      var success = document.execCommand("copy");
+      if (success) {
+        accesscode.blur();
+        copyac.addClass('btn-success');
+        copyac.html("<i class='fas fa-check'></i>" + getLocalizedString("copied"))
+        setTimeout(function(){
+          copyac.removeClass('btn-success');
+          copyac.html("<i class='fas fa-copy'></i>" + getLocalizedString("copy"))
         }, 2000)
       }
     });

@@ -16,26 +16,73 @@
 
 <div class="container mt-8 mb-6 text-center">
 
-  <h2 class="mb-6"><%= t("greenlight") %> <%= t("features.title") %></h2>
+  <h1 class="mb-6"><%= t("features.title") %> YMeet?</h1>
 
   <div class="row feature-stamp">
     <div class="col-lg-3 col-md-6">
       <div class="feature-item">
-        <div class="stamp bg-primary"><i class="fas fa-chalkboard-teacher fa-2x"></i></div>
-        <h4 class="mt-4"><%= t("features.rooms") %></h4>
+      <span class="stamp bg-primary"><i class="fas fa-shield-alt fa-4x"></i></span>
+        <h4 class="mt-4"><%= t("features.security", href: link_to("https://ymeet.in/", target: "_blank")).html_safe %></h4>
       </div>
     </div>
     <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-film fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.recordings") %></h4>
+      <span class="stamp bg-primary"><i class="fas fa-lock fa-4x"></i></span>
+      <h4 class="mt-4"><%= t("features.lock") %></h4>
     </div>
     <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-pencil-alt fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.designs") %></h4>
+      <span class="stamp bg-primary"><i class="fas fa-thumbs-up fa-4x"></i></span>
+      <h4 class="mt-4"><%= t("features.moderator_approval") %></h4>
     </div>
     <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-door-open fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.authentication") %></h4>
+      <span class="stamp bg-primary"><i class="fas fa-chalkboard fa-4x"></i></span>
+      <h4 class="mt-4"><%= t("features.whiteboard") %></h4>
     </div>
   </div>
+
+<br></br>
+
+  <div class="row feature-stamp">
+    <div class="col-lg-3 col-md-6">
+      <div class="feature-item">
+      <span class="stamp bg-primary"><i class="fas fa-microphone fa-4x"></i></span>
+        <h4 class="mt-4"><%= t("features.audio") %></h4>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <span class="stamp bg-primary"><i class="fas fa-video fa-4x"></i></span>
+      <h4 class="mt-4"><%= t("features.video") %></h4>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <span class="stamp bg-primary"><i class="fa fa-desktop fa-4x"></i></span>
+      <h4 class="mt-4"><%= t("features.desktop_share") %></h4>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <span class="stamp bg-primary"><i class="fas fa-film fa-4x"></i></span>
+      <h4 class="mt-4"><%= t("features.recordings") %></h4>
+    </div>
+  </div>
+
+<br></br>
+
+  <div class="row feature-stamp">
+    <div class="col-lg-3 col-md-6">
+      <div class="feature-item">
+      <span class="stamp bg-primary"><i class="fas fa-comments fa-4x"></i></span>
+        <h4 class="mt-4"><%= t("features.chat") %></h4>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <span class="stamp bg-primary"><i class="fas fa-poll fa-4x"></i></span>
+      <h4 class="mt-4"><%= t("features.poll") %></h4>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <span class="stamp bg-primary"><i class="fas fa-users fa-4x"></i></span>
+      <h4 class="mt-4"><%= t("features.breakout_rooms") %></h4>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <span class="stamp bg-primary"><i class="fa fa-file-upload fa-4x"></i></span>
+      <h4 class="mt-4"><%= t("features.files") %></h4>
+    </div>
+  </div>
+
 </div>

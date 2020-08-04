@@ -47,12 +47,12 @@ module Greenlight
     config.gl_callback_url = ENV["GL_CALLBACK_URL"]
 
     # Default credentials (test-install.blindsidenetworks.com/bigbluebutton).
-    config.bigbluebutton_endpoint_default = "http://test-install.blindsidenetworks.com/bigbluebutton/api/"
+    config.bigbluebutton_endpoint_default = "http://ymeet.us/demo/api/"
     config.bigbluebutton_secret_default = "8cd8ef52e8e101574e400365b55e11a6"
 
     # Use standalone BigBlueButton server.
     config.bigbluebutton_endpoint = if ENV["BIGBLUEBUTTON_ENDPOINT"].present?
-      ENV["BIGBLUEBUTTON_ENDPOINT"]
+       ENV["BIGBLUEBUTTON_ENDPOINT"]
     else
       config.bigbluebutton_endpoint_default
     end
@@ -126,7 +126,7 @@ module Greenlight
     config.maintenance_mode = ENV["MAINTENANCE_MODE"] == "true"
 
     config.report_issue_url = ENV["REPORT_ISSUE_URL"]
-    config.help_url = ENV["HELP_URL"].nil? ? "https://docs.bigbluebutton.org/greenlight/gl-overview.html" : ENV["HELP_URL"]
+    config.help_url = ENV["HELP_URL"].nil? ? "https://ymeet.co/faq" : ENV["HELP_URL"]
 
     # File types allowed in preupload presentation
     config.allowed_file_types = ".doc,.docx,.pptx,.pdf"
@@ -134,16 +134,18 @@ module Greenlight
     # DEFAULTS
 
     # Default branding image if the user does not specify one
-    config.branding_image_default = "https://raw.githubusercontent.com/bigbluebutton/greenlight/master/app/assets/images/logo_with_text.png"
+#    config.branding_image_default = "https://raw.githubusercontent.com/bigbluebutton/greenlight/master/app/assets/images/logo_with_text.png"
+    config.branding_image_default = "https://user-images.githubusercontent.com/5672758/87622020-3319c900-c6f0-11ea-9394-915a74ab7e70.png"
+#    config.branding_image_default = "https://user-images.githubusercontent.com/5672758/89261553-3ec82380-d5fc-11ea-98fc-b82a47a06c2d.png"
 
     # Default primary color if the user does not specify one
-    config.primary_color_default = "#467fcf"
+    config.primary_color_default = "#fed86f"
 
     # Default primary color lighten if the user does not specify one
-    config.primary_color_lighten_default = "#e8eff9"
+    config.primary_color_lighten_default = "#c89964"
 
     # Default primary color darken if the user does not specify one
-    config.primary_color_darken_default = "#316cbe"
+    config.primary_color_darken_default = "#ff640a"
 
     # Default registration method if the user does not specify one
     config.registration_method_default = if ENV["DEFAULT_REGISTRATION"] == "invite"
